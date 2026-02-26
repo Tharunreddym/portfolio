@@ -5,7 +5,7 @@ import { ABOUT_ME, SOCIAL_MEDIA, RESUME_LINK } from "@/constants";
 import Magnetic from "./Magnetic";
 import heroAnimation from "@/assets/images/Hero/main_comp.json";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/tharunreddymopuru/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/tharunrm/";
 
 export default function Hero() {
   return (
