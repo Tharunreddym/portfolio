@@ -17,13 +17,13 @@ export const SOCIAL_MEDIA: SocialLink[] = [
   {
     id: "social-media-1",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/tharunreddymopuru/",
+    link: "https://www.linkedin.com/in/tharunrm/",
     label: "LinkedIn",
   },
   {
     id: "social-media-2",
     icon: AiFillGithub,
-    link: "https://github.com/tharunreddymopuru",
+    link: "https://github.com/Tharunreddym",
     label: "GitHub",
   },
   {
@@ -31,11 +31,5 @@ export const SOCIAL_MEDIA: SocialLink[] = [
     icon: AiFillMail,
     link: "mailto:tharunreddymopuru@gmail.com",
     label: "Email",
-  },
-  {
-    id: "social-media-5",
-    icon: FaXTwitter,
-    link: "https://x.com/tharun_mopuru",
-    label: "X (Twitter)",
   },
 ];
