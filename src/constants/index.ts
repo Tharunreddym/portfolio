@@ -7,7 +7,7 @@ export * from "./certifications";
 
 // Ensure this matches the file in your /public folder exactly
 export const RESUME_LINK = "/TharunR_Mopuru_Resume.pdf";
-export const REPO_LINK = "https://github.com/tharunreddymopuru/Portfolio";
+export const REPO_LINK = "https://www.linkedin.com/in/tharunrm/";
 
 export const ABOUT_ME = {
   name: "Tharun R. Mopuru",
