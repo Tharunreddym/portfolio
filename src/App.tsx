@@ -11,7 +11,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Projects from "@/components/Projects";
-import OpenSource from "@/components/OpenSource";
+import Certifications from "@/components/Certifications.tsx";
 import TLDR from "@/components/TLDR";
 import Footer from "@/components/Footer";
 import LightModeBanner from "@/components/LightModeBanner";
@@ -56,7 +56,7 @@ export default function App() {
             <Skills />
             <Education />
             <Projects />
-            <OpenSource />
+            <Certifications />
             <TLDR />
             <Footer />
           </main>

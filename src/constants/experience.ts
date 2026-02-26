@@ -1,31 +1,27 @@
 import type { IconType } from "react-icons";
 import {
-  SiAntdesign,
-  SiCircleci,
-  SiDocker,
-  SiGit,
-  SiGo,
-  SiKubernetes,
-  SiMui,
-  SiMysql,
-  SiNestjs,
+  SiPhp,
+  SiJavascript,
   SiOpenjdk,
-  SiOpentelemetry,
-  SiPostgresql,
-  SiPrisma,
-  SiPython,
-  SiReact,
-  SiRuby,
   SiSpringboot,
-  SiTypescript,
+  SiAngular,
+  SiVuedotjs,
+  SiJenkins,
+  SiGit,
+  SiPython,
+  SiFlask,
+  SiMysql,
+  SiFastapi,
+  SiSqlalchemy,
+  SiGnubash,
+  SiDocker,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
+// Reverting to original template imports to fix resolve errors
 import nutanix from "@/assets/images/Experience/nutanix.png";
 import flipkart from "@/assets/images/Experience/flipkart.png";
 import appleute from "@/assets/images/Experience/appleute.svg";
 import trinit from "@/assets/images/Experience/TriNit.jfif";
-import acm from "@/assets/images/Experience/acm.png";
 
 export interface TechItem {
   id: string;
@@ -48,148 +44,99 @@ export interface Experience {
 
 export const EXPERIENCES: Experience[] = [
   {
-    organisation: "Nutanix",
-    logo: nutanix,
-    link: "https://www.nutanix.com/",
+    organisation: "Kaizen Family Dental",
+    logo: nutanix, // Using existing asset
+    link: "#",
     positions: [
       {
-        title: "Member of Technical Staff",
-        duration: "Jan 2025 — Present",
+        title: "Software Development Engineer Intern",
+        duration: "Oct 2024 — Apr 2025",
         content: [
           {
-            text: "Working with the CPaaS (Compute Platform as a Service) team.",
+            text: "Developed and iterated on high-fidelity functional prototypes for internal tools, accelerating the transition from design to MVP by 3 weeks.",
             tech: [
-              { id: "nt-1", icon: SiGo, name: "Go" },
-              { id: "nt-2", icon: SiPython, name: "Python" },
-              { id: "nt-3", icon: SiOpentelemetry, name: "OpenTelemetry" },
-              { id: "nt-4", icon: SiGit, name: "Git" },
-              { id: "nt-5", icon: SiKubernetes, name: "Kubernetes" },
-              { id: "nt-6", icon: SiDocker, name: "Docker" },
-              { id: "nt-7", icon: SiCircleci, name: "CircleCI" },
+              { id: "kz-1", icon: SiPhp, name: "PHP" },
+              { id: "kz-2", icon: SiJavascript, name: "JavaScript" },
+              { id: "kz-3", icon: SiMysql, name: "SQL/Database Encryption" },
             ],
+          },
+          {
+            text: "Architected a secure, full stack intranet system using PHP and JavaScript, optimizing the frontend and reducing manual data entry by 40%.",
+          },
+          {
+            text: "Engineered a HIPAA-compliant web application, implementing strict database encryption and durable data models to secure 10,000+ health records.",
           },
         ],
       },
     ],
   },
   {
-    organisation: "Flipkart",
-    logo: flipkart,
-    link: "https://www.flipkart.com/",
+    organisation: "WinIT",
+    logo: flipkart, // Using existing asset
+    link: "#",
     positions: [
       {
-        title: "Software Development Engineer",
-        duration: "Oct 2024 — Jan 2025",
+        title: "Full Stack Software Developer",
+        duration: "Jun 2023 — Jul 2024",
         content: [
           {
-            text: "Played a key role in migrating non-customer outbound workflows from a monolith to microservices by developing several APIs and collaborating with UI and QA teams.",
+            text: "Developed high-performance Java backend microservices using Spring Boot and implemented caching to optimize system throughput by 30%.",
             tech: [
-              { id: "fk-1", icon: SiOpenjdk, name: "Java" },
-              { id: "fk-2", icon: SiSpringboot, name: "Spring Boot" },
-              { id: "fk-3", icon: SiRuby, name: "Ruby" },
-              { id: "fk-4", icon: SiMysql, name: "MySQL" },
-              { id: "fk-5", icon: SiKubernetes, name: "Kubernetes" },
+              { id: "wi-1", icon: SiOpenjdk, name: "Java" },
+              { id: "wi-2", icon: SiSpringboot, name: "Spring Boot" },
+              { id: "wi-3", icon: SiAngular, name: "Angular" },
+              { id: "wi-4", icon: SiVuedotjs, name: "Vue.js" },
+              { id: "wi-5", icon: SiJenkins, name: "Jenkins" },
+              { id: "wi-6", icon: SiGit, name: "Git" },
             ],
           },
           {
-            text: "Built a CLI tool (sc-warehouse screen finder) to help developers locate active Kubernetes pod screens, reducing on-call resolution time.",
-          },
-          {
-            text: "Optimized latency-critical APIs by reducing redundant DB calls and implementing object caching, resulting in significant performance improvements.",
-          },
-          {
-            text: "Spearheaded platform-wide stability initiatives; resolved numerous P0 incidents and addressed critical NFRs, significantly enhancing system resilience.",
-          },
-          {
-            text: "Emerged as a Subject Matter Expert (SME) within the picking domain, providing expertise on complex technical challenges and new feature development.",
+            text: "Crafted responsive, high-fidelity frontend UI components using Angular and Vue.js, improving page load performance by 20%.",
           },
         ],
       },
     ],
   },
   {
-    organisation: "Appleute",
-    logo: appleute,
-    link: "https://www.appleute.de/en/",
+    organisation: "Sanguine Solutions Pvt. Ltd.",
+    logo: appleute, // Using existing asset
+    link: "#",
     positions: [
       {
-        title: "Software Engineering Intern (Remote)",
-        duration: "May 2024 — Oct 2024",
+        title: "Technical Intern",
+        duration: "Jul 2022 — Dec 2022",
         content: [
           {
-            text: "Developed a complex CRM system (frontend & backend) enabling real-time tracking of customer interactions and increasing user engagement by 40%.",
+            text: "Designed and deployed 12+ scalable REST APIs using Python and Flask, supporting 5,000+ daily requests.",
             tech: [
-              { id: "e-1", icon: SiTypescript, name: "TypeScript" },
-              { id: "e-2", icon: SiReact, name: "React" },
-              { id: "e-3", icon: SiAntdesign, name: "Ant Design" },
-              { id: "e-4", icon: TbBrandReactNative, name: "React Native" },
-              { id: "e-5", icon: SiNestjs, name: "NestJS" },
-              { id: "e-6", icon: SiPostgresql, name: "PostgreSQL" },
-              { id: "e-7", icon: SiPrisma, name: "Prisma" },
+              { id: "ss-1", icon: SiPython, name: "Python" },
+              { id: "ss-2", icon: SiFlask, name: "Flask" },
+              { id: "ss-3", icon: SiMysql, name: "SQL" },
             ],
           },
           {
-            text: "Collaborated with cross-functional teams to design and implement new features for app screens in React Native, resulting in a 30% increase in user engagement.",
-          },
-          {
-            text: "Developed and integrated a secure login system for customers in the React Native app, reducing login errors by 15% and increasing user satisfaction by 20%.",
+            text: "Implemented JWT authentication and request validation, reducing backend security vulnerabilities by 35%.",
           },
         ],
       },
     ],
   },
   {
-    organisation: "TRI NIT Hackathon",
-    logo: trinit,
-    link: "https://github.com/TRI-NIT",
+    organisation: "Pragmatic Solutions Pvt. Ltd.",
+    logo: trinit, // Using existing asset
+    link: "#",
     positions: [
       {
-        title: "Web Developer",
-        duration: "Jan 2023",
+        title: "Software Developer Intern",
+        duration: "Mar 2022 — Jun 2022",
         content: [
           {
-            text: "Contributed to Tri-Nit hackathon website.",
-            link: "https://github.com/TRI-NIT",
+            text: "Built 8 FastAPI microservices to power real-time frontend dashboards for 1,000+ active users.",
             tech: [
-              { id: "t-1", icon: SiReact, name: "React" },
-              { id: "t-2", icon: SiMui, name: "Material UI" },
+              { id: "ps-1", icon: SiFastapi, name: "FastAPI" },
+              { id: "ps-2", icon: SiSqlalchemy, name: "SQLAlchemy" },
+              { id: "ps-3", icon: SiDocker, name: "Docker" },
             ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "ACM NITK",
-    logo: acm,
-    link: "https://github.com/TRI-NIT",
-    positions: [
-      {
-        title: "Project Mentor",
-        duration: "Jan 2023",
-        content: [
-          {
-            text: "Mentored team on a 'Online code editor' project.",
-            link: "https://github.com/Amruth-S05/Online-Code-Editor",
-          },
-        ],
-      },
-      {
-        title: "DSA Mentor",
-        duration: "May 2022",
-        content: [
-          {
-            text: "Mentored 30+ students in summer mentorship program on data structures and algorithms.",
-          },
-        ],
-      },
-      {
-        title: "Project Mentee",
-        duration: "Jan — Apr 2022",
-        content: [
-          {
-            text: "Analysed various games like Ludo, Mafia, Snake and Ladder in Python.",
-            tech: [{ id: "p-1", icon: SiPython, name: "Python" }],
           },
         ],
       },

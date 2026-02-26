@@ -8,10 +8,10 @@ interface MagneticProps {
 }
 
 export default function Magnetic({
-  children,
-  strength = 0.3,
-  className = "",
-}: MagneticProps) {
+                                   children,
+                                   strength = 0.3,
+                                   className = "",
+                                 }: MagneticProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -27,15 +27,15 @@ export default function Magnetic({
   const onMouseLeave = () => setPosition({ x: 0, y: 0 });
 
   return (
-    <motion.div
-      ref={ref}
-      onMouseMove={onMouseMove}
-      onMouseLeave={onMouseLeave}
-      animate={{ x: position.x, y: position.y }}
-      transition={{ type: "spring", stiffness: 200, damping: 15, mass: 0.2 }}
-      className={className}
-    >
-      {children}
-    </motion.div>
+      <motion.div
+          ref={ref}
+          onMouseMove={onMouseMove}
+          onMouseLeave={onMouseLeave}
+          animate={{ x: position.x, y: position.y }}
+          transition={{ type: "spring", stiffness: 200, damping: 15, mass: 0.2 }}
+          className={className}
+      >
+        {children}
+      </motion.div>
   );
 }

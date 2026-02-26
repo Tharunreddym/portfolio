@@ -1,6 +1,5 @@
 import {
   AiFillGithub,
-  AiFillInstagram,
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
@@ -18,31 +17,25 @@ export const SOCIAL_MEDIA: SocialLink[] = [
   {
     id: "social-media-1",
     icon: AiFillLinkedin,
-    link: "https://www.linkedin.com/in/sudhanva-nadiger-b616a6212/",
+    link: "https://www.linkedin.com/in/tharunreddymopuru/",
     label: "LinkedIn",
   },
   {
     id: "social-media-2",
     icon: AiFillGithub,
-    link: "https://www.github.com/Sudhanva-Nadiger",
+    link: "https://github.com/tharunreddymopuru",
     label: "GitHub",
   },
   {
     id: "social-media-3",
     icon: AiFillMail,
-    link: "mailto:sudhanvanadiger12@gmail.com",
+    link: "mailto:tharunreddymopuru@gmail.com",
     label: "Email",
-  },
-  {
-    id: "social-media-4",
-    icon: AiFillInstagram,
-    link: "https://www.instagram.com/sudhanva_nadiger__",
-    label: "Instagram",
   },
   {
     id: "social-media-5",
     icon: FaXTwitter,
-    link: "https://twitter.com/SudhanvaNadiger",
+    link: "https://x.com/tharun_mopuru",
     label: "X (Twitter)",
   },
 ];
